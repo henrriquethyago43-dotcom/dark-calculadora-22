@@ -1,0 +1,6 @@
+{
+  "name": "DARK CALCULADORA",
+  "description": "Calculadora moderna, profissional e minimalista desenvolvida para Android em preto absoluto (#080808) e vermelho intenso (#E50914).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

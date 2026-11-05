@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #080808;
+    color: #ffffff;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbar for history and formulas */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(229, 9, 20, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 9, 20, 0.4);
+}
+
+/* Glow effects */
+.glow-red-sm {
+  box-shadow: 0 0 14px rgba(229, 9, 20, 0.35);
+}
+.glow-red-md {
+  box-shadow: 0 0 24px rgba(229, 9, 20, 0.55);
+}
+.glow-red-text {
+  text-shadow: 0 0 12px rgba(229, 9, 20, 0.7);
+}
